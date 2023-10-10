@@ -1,0 +1,24 @@
+#ifndef PRODUCTMANAGER_H
+#define PRODUCTMANAGER_H
+
+#include<vector>
+
+#include "product.h"
+//using namespance std;
+class ProductManager
+{
+	public:
+		ProductManager();
+		~ProductManager();
+		bool Insert(Product p);
+		bool Update(Product p);
+		bool Delete(int id);
+		bool DeleteAll();
+		bool Find(string name);
+//		void 
+		Product GetById(int id);
+		vector<Product> GetAll();
+	protected:
+};
+
+#endif
